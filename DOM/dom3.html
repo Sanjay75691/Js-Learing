@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM3</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul>
+        <li>javascript</li>
+    </ul>
+  
+</body>
+ <script>
+   // selecting element 
+     const newLi = document.querySelector('li')
+     console.log(newLi)
+     newLi.innerHTML = 'Learning DOM'
+     newLi.textContent = 'DOM Manipulation'
+
+     // creating new element 
+     const secli = document.createElement('li')
+     document.querySelector('ul').appendChild(secli)
+     secli.textContent = 'Learning JS'
+
+     // removing element 
+     document.querySelector('ul').removeChild(document.querySelector('li'))
+     
+ </script>
+</html>
