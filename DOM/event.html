@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Event</title>
+</head>
+<style>
+    .itemA {
+        color: red;
+    }
+    .itemB {
+        color: blue;
+    }
+    .itemC {
+        color: green;
+    }
+    .itemD {
+        color: orange;
+    }
+</style>
+<body>
+    <ul>
+        <li class="itemA"><img src="red-image.jpg" alt="Red Item"></li>
+        <li class="itemB"><img src="blue-image.jpg" alt="Blue Item"></li>
+        <li class="itemC"><img src="green-image.jpg" alt="Green Item"></li>
+        <li class="itemD"><img src="orange-image.jpg" alt="Orange Item"></li>
+    </ul>
+</body>
+<script>
+    document.getElementsByClassName('itemA')[0].addEventListener('click', function() {
+        alert('Item Red Clicked')
+    })
+    document.getElementsByClassName('itemB')[0].addEventListener('click', function() {
+        alert('Item Blue Clicked')
+    })
+    document.getElementsByClassName('itemC')[0].addEventListener('click', function() {
+        alert('Item Green Clicked')
+    })
+    document.getElementsByClassName('itemD')[0].addEventListener('click', function() {
+        alert('Item Orange Clicked')
+    })
+</script>
+</html>
