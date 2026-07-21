@@ -20,7 +20,7 @@
     }
 </style>
 <body>
-    <ul>
+    <ul id="main">
         <li class="itemA"><img src="red-image.jpg" alt="Red Item"></li>
         <li class="itemB"><img src="blue-image.jpg" alt="Blue Item"></li>
         <li class="itemC"><img src="green-image.jpg" alt="Green Item"></li>
@@ -28,6 +28,7 @@
     </ul>
 </body>
 <script>
+    <!-- Clicked Event LIstener-->
     document.getElementsByClassName('itemA')[0].addEventListener('click', function() {
         alert('Item Red Clicked')
     })
@@ -39,6 +40,12 @@
     })
     document.querySelector('.itemD').addEventListener('click', function() {
         alert('Item Orange Clicked')
+    })
+    <!--Event remove-->
+    document.getElementById('main').addEventListener('click', function(e) {
+        console.log(e.target.parentNode)
+        let li = e.target.parentNode
+        li.remove()
     })
 </script>
 </html>
