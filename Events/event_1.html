@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event learning</title>
+</head>
+<body>
+    <h1>Learning Js</h1>
+    <button id="stop">Stop</button>
+</body>
+ <script>
+  setTimeout(function(){
+    console.log("SANJAY")
+  }, 2000)
+
+   const TextCng =  function(){
+ document.querySelector('h1').innerHTML = "JS EveryDay"
+    }
+
+   const CngMe =  setTimeout(TextCng,2000)
+
+   document.querySelector('#stop').addEventListener('click', function(){
+    clearTimeout(CngMe)
+    console.log("stopped")
+   })
+   
+ </script>
+</html>
