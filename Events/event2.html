@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SANJAY</h1>
+     <button id="start">start</button>
+    <button id="stop">stop</button>
+    
+</body>
+ <script>
+    setInterval(function(){
+        console.log("CSE SANJAY")
+    }, 2000)
+
+    const CSE = function(){
+        document.querySelector('h1').innerHTML = 'CSE STUDENT'
+    }
+   const CS = setInterval(CSE, 2000)
+
+   document.getElementById('stop').addEventListener('click', function(){
+    clearInterval(CS)
+    console.log("stoped")
+   })
+
+   document.getElementById('start').addEventListener('click', function(){
+    clearInterval(CS)
+    console.log("start")
+   })
+ </script>
+</html>
