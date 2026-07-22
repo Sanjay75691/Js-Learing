@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //  1.Print Hello
+    function sayHello(){
+      console.log("hello world!")
+    }
+    sayHello()
+
+    // 2. Sum of Two Numbers
+    function add(a, b) {
+        return a + b;
+    }
+    console.log(add(20, 20));
+
+    // 3. Square of a Number
+    function square(num){
+        return num*num;
+    }
+    console.log(square(6));
+
+    // 3. Square of a Number
+    function EvenOrOdd(num) {
+        if (num % 2 === 0) {
+            return 'Even';
+        }
+        return 'Odd';
+    }
+    console.log(EvenOrOdd(9));
+
+    // 5. Find the Largest Number
+    function largeNum(a, b) {
+      if (a > b) {
+        return "a";
+      }
+      return "b";
+    }
+    console.log(largeNum(30, 20))
+
+    //  6: Greeting Function (Hello Sanjay)
+    function greet(name) {
+      return `Hello ${name}`;
+    }
+    console.log(greet("Sanjay"));
+
+//   ✅  n0.6
+
+  function celsiusToFahrenheit(celsius) {
+  return (celsius * 9) / 5 + 32;
+}
+
+console.log(celsiusToFahrenheit(0));    // 32
+
+// ✅ Question 8: Check Positive, Negative, or Zero
+  function checkNumber(num) {
+  if (num > 0) {
+    return "positive";
+  }
+  else if (num < 0) {
+    return "negative";
+  }
+  else  {
+    return "Zero";
+  }
+
+  }
+  console.log(checkNumber(-6))
+</script>
+</html>
