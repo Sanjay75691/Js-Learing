@@ -109,3 +109,21 @@ let { brand, model, price} = mobile;
 console.log(brand);
 console.log(model);
 console.log(price);
+
+
+// spread operator
+let fruits = ["Apple", "Banana"];
+let newFruits = [...fruits, "mango", "orange"];
+console.log(newFruits);
+
+
+// update student data using spread
+let student = {
+    name: "sanjay",
+    age: 23,
+};
+let updateSudent = {
+    ...student,
+    city: "chandausi",
+    age: 25
+}; console.log(updateStudent);
