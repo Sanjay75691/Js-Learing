@@ -54,7 +54,19 @@
 // //node JS_practice_QUES/arrays.js
 
 
-// push pop operation
+// push pop shift unshift operation
 let colors = ["red", "green", "blue"];
 colors.push("yellow");
+console.log(colors);
+
+let cars = ["BMW", "Audi", "Tesla", "Toyota"];
+cars.pop("Toyota");
+console.log(cars);
+
+let animals = ["Dog", "Cat", "Lion", "Tiger"];
+animals.shift();
+console.log(animals);
+
+let colors = ["Green", "Blue", "Yellow"];
+colors.unshift("Red");
 console.log(colors);
