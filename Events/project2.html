@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="input" placeholder="Type here">
+
+<h2 id="output">Waiting...</h2>
+
+<script>
+
+let input = document.getElementById("input")
+let output = document.getElementById("output")
+input.addEventListener("keyup", function (event){
+    output.textContent = "last key: " + event.key
+})
+
+</script>
+
+</body>
+</html>

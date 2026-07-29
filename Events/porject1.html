@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="heading">Hover Me</h1>
+
+<script>
+
+let heading = document.querySelector("#heading")
+heading.addEventListener("mouseover", function(){
+    heading.textContent = "Welcome Sanjay!"
+    heading.style.color = "green"
+    heading.style.fontSize = "50px"
+});
+
+heading.addEventListener("mouseout", function(){
+    heading.textContent = "Hover Me!"
+    heading.style.color = "black"
+    heading.style.fontSize = "32px"
+});
+
+// Write your JavaScript here
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="heading">Welcome</h1>
+
+<button id="btn">
+Click Me
+</button>
+
+<script>
+
+let button = document.getElementById('btn')
+button.addEventListener("click", function(){
+    let heading = document.getElementById("heading")
+    heading.textContent = "button clicked!"
+    heading.style.color = "red"
+    heading.style.fontSize = "60px"
+});
+
+
+</script>
+
+</body>
+</html>

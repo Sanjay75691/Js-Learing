@@ -122,7 +122,7 @@ let student = {
     name: "sanjay",
     age: 23,
 };
-let updateSudent = {
+let updateStudent = {
     ...student,
     city: "chandausi",
     age: 25
